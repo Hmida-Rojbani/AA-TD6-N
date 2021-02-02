@@ -5,7 +5,7 @@ BEGIN
     IF (A = NIL OR A^.p0 = NIL) THEN // A^.p0 = NIL pour tester si A eest une feuille
         RETURN A
     ELSE
-        WHILE ( i < A^.nbr AND x > A^.fils[i].val) DO
+        WHILE ( i < A^.nbr AND x > A^.fils[i]^.val) DO
             i := i+1
         END_WHILE
         IF (i-1 = 0) THEN
